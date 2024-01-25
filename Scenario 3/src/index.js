@@ -1,6 +1,9 @@
 
 const quarterOf = (month) => {
-    //your code here
+    if(month<=3) return 1;
+    else if(month<=6) return 2;
+    else if(month<=9) return 3;
+    else return 4;
   }
 
 //Use SpecRunner to check the Test Cases.
