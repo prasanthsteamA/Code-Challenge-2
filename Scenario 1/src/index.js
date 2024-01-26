@@ -1,8 +1,8 @@
 
 function increaseNumber(initialValue, finalValue) {
      //your code here
-    const increaseNumber=finalValue-initialValue;
-    return increaseNumber;
+    return finalValue-initialValue;
+    
   }
 
 //Use SpecRunner to check the Test Cases.

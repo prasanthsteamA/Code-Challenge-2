@@ -1,7 +1,7 @@
 function hero(bullets, dragons){
      //your code here
-     const dragonsSlayable=bullets/2;
-     return dragonsSlayable>=dragons;
+     
+     return (bullets/2 )>=dragons;
   }
 
 //Use SpecRunner to check the Test Cases.
