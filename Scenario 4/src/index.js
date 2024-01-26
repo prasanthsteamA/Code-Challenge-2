@@ -1,22 +1,19 @@
-function calculateTip(amount, rating) {
-    if(rating == "Terrible"){
-        return 0;
+    function calculateTip(amount, rating) {
+
+        switch(rating) {
+        case  "Terrible":
+            return 0;
+        case "Poor": 
+            return Math.round((amount/100)*5);
+        case "good": 
+            return Math.round((amount/100)*10);
+        case "great": 
+            return Math.round((amount/100)*15);
+        case "Excellent": 
+            return Math.round((amount/100)*20);
+        default: return "Rating not recognised";
     }
-    else if(rating == "Poor"){
-        return Math.round((amount/100)*5);
-    }
-    else if(rating == "good"){
-        return Math.round((amount/100)*10);
-    }
-    else if(rating == "great"){
-        return Math.round((amount/100)*15);
-    }
-    else if(rating == "Excellent"){
-        return Math.round((amount/100)*20);
-    }
-    else{
-        return "Rating not recognised";
-    }
+    
 }
   
 
